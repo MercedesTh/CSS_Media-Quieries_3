@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+p{
+    color: grey;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+main{
+    height: 88vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main article{
+    margin: 3% 0% 4% 6%;
+}
+
+.white{
+    grid-column: 1/2;
+}
+
+.white article{
+    width: 90%;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-bottom: 30%;
+}
+
+h2{
+    font-size: 2.25rem;
+    margin-bottom: 9%;
+}
+
+.white p{
+    line-height: 1.5rem;
+    width: 55%;
+}
+
+.grey{
+    grid-column: 2/3;
+    background: url(../img/104_2_dieter_rams_the_jf_chen_collection_july_2018_artur_braun_and_fritz_eichler_sk_25_radio__wright_auction.jpeg) no-repeat center/cover;
+}
+
+.grey article{
+    display: flex;
+    align-items: baseline;
+}
+
+.grey p{
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+footer{
+    background: rgba(128, 128, 128, 0.1);
+    height: 12vh;
+    display: flex;
+}
+
+footer article{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.left{
+    padding: 0 3%;
+}
+
+.left div{
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right{
+    padding-right: 2%;
+}
+
+.right a{
+    background: black;
+    color: white;
+    padding: 5% 6%;
+}
+
+.right div{
+    text-align: right;
+}
+
+@media (max-width: 768px){
+
+    .white{
+        grid-column: 1/4;
+        height: 65vh;
+    }
+
+    .grey{
+        grid-column: 1/4;
+        height: 105vh;
+    }
+
+    h1{
+        margin-bottom: 9%;
+    }
+
+    footer{
+        margin-top: 60%;
+    }
+
+    .left{
+        padding: 0 4%;
+    }
+
+    .left div{
+        width: 12%;
+    }
+
+    .right a{
+        padding: 8%;
+    }
+}
+
+
+@media (max-width: 576px){
+
+    .white{
+        height: 97vh;
+    }
+
+    .white article{
+        width: 75%;
+        margin: 5% 5% 40% 10%;
+    }
+
+    h1{
+        margin-bottom: 45%;
+    }
+
+    h2{
+        margin-bottom: 25%;
+    }
+
+    .white p{
+        width: 100%;
+        font-size: 0.9rem;;
+        line-height: 2rem;
+    }
+
+    footer{
+        margin-top: 157%;
+    }
+
+    .left div{
+        width: 20%;
+    }
+
+    .left{
+        padding: 0px 6%;
+    }
+
+    .right div{
+        text-align: left;
+    }
+
+    .right a{
+        padding: 14%;
+    }
+
+    .right h3{
+        font-size: 1em;
+    }
+
+    .right p{
+        font-size: 0.8rem;
+    }
+}
